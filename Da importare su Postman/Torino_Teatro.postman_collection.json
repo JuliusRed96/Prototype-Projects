@@ -1,0 +1,510 @@
+{
+	"info": {
+		"_postman_id": "0bb05273-e0ff-4a92-91ba-16a187e7474b",
+		"name": "Torino_Teatro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35108790"
+	},
+	"item": [
+		{
+			"name": "Ciienti",
+			"item": [
+				{
+					"name": "SAVE CLIENTI()",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cognome\": \"Mass\",\r\n        \"nome\": \"Rossi\",\r\n        \"telefono\": \"334234567\",\r\n        \"email\": \"rossi.marco90@gmail.com\",\r\n        \"login\": \"Marco45\",\r\n        \"password\": \"hyyfh73\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clienti/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FINDALL CLIENTI()",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clienti/findall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"findall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CLIENTI()",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clienti/delete?id=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE CLIENTI()",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cognome\": \"Rossi\",\r\n    \"nome\": \"carlo\",\r\n    \"telefono\": \"3342347\",\r\n    \"email\": null,\r\n    \"login\": null,\r\n    \"password\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clienti/update/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clienti",
+								"update",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Biglietto",
+			"item": [
+				{
+					"name": "SAVE BIGLIETTO()",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"quantita\": 5,\r\n        \"tipo_pagamento\": \"MasterCard\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/biglietto/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biglietto",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FINDALL BIGLIETTO()",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/biglietto/findall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biglietto",
+								"findall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE BIGLIETTO()",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id_cliente\": 1,\r\n        \"cognome\": \"Mark\",\r\n        \"nome\": \"Rossi\",\r\n        \"telefono\": \"334234567\",\r\n        \"email\": \"rossi.marco90@gmail.com\",\r\n        \"login\": \"Marco45\",\r\n        \"password\": \"hyyfh73\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/biglietto/delete?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"biglietto",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Repliche",
+			"item": [
+				{
+					"name": "FINDALL REPLICHE()",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/repliche/findall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repliche",
+								"findall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE REPLICHE()",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id_cliente\": 1,\r\n        \"cognome\": \"Mark\",\r\n        \"nome\": \"Rossi\",\r\n        \"telefono\": \"334234567\",\r\n        \"email\": \"rossi.marco90@gmail.com\",\r\n        \"login\": \"Marco45\",\r\n        \"password\": \"hyyfh73\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/repliche/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"repliche",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Spettacoli",
+			"item": [
+				{
+					"name": "SAVE SPETTACOLI()",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"titolo\": \"Mark\",\r\n        \"autore\": \"Rossi\",\r\n        \"regista\": \"Kubrick\",\r\n        \"prezzo\": 12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/spettacoli/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spettacoli",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FINDALL SPETTACOLI()",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/spettacoli/findall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spettacoli",
+								"findall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE SPETTACOLI()",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id_cliente\": 1,\r\n        \"cognome\": \"Mark\",\r\n        \"nome\": \"Rossi\",\r\n        \"telefono\": \"334234567\",\r\n        \"email\": \"rossi.marco90@gmail.com\",\r\n        \"login\": \"Marco45\",\r\n        \"password\": \"hyyfh73\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/spettacoli/delete?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spettacoli",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE SPETTACOLI()",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"titolo\": \"Personaggi\",\r\n        \"autore\": \"Rossi\",\r\n        \"regista\": \"Solari\",\r\n        \"prezzo\": 14\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/spettacoli/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spettacoli",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teatri",
+			"item": [
+				{
+					"name": "SAVE TEATRI()",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome\": \"Rossi\",\r\n        \"indirizzo\": \"corso monginevro\",\r\n        \"citta\": \"Torino\",\r\n        \"provincia\": \"TO\",\r\n        \"telefono\": \"33423455647\",\r\n        \"posti\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/teatri/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teatri",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FINDALL TEATRI()",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/teatri/findall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teatri",
+								"findall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE TEATRI()j",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"id_cliente\": 1,\r\n        \"cognome\": \"Mark\",\r\n        \"nome\": \"Rossi\",\r\n        \"telefono\": \"334234567\",\r\n        \"email\": \"rossi.marco90@gmail.com\",\r\n        \"login\": \"Marco45\",\r\n        \"password\": \"hyyfh73\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/teatri/delete?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teatri",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE TEATRI()",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nome\": \"Bianchi\",\r\n        \"indirizzo\": \"corso novare\",\r\n        \"citta\": \"Roma\",\r\n        \"provincia\": \"RO\",\r\n        \"telefono\": \"33423455647\",\r\n        \"posti\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/teatri/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teatri",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
